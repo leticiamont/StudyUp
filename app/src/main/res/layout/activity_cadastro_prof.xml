@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.telasCadastro.CadastroProfActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:alpha="0.2"
+        android:background="@drawable/frame_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:alpha="0.2"
+        android:background="@drawable/frame_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Cadastro de Professor"
+        android:textAlignment="center"
+        android:textColor="#034C8C"
+        android:textSize="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNomeProf"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Nome Completo"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/edtEmailProf"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Digite seu email"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNomeProf" />
+
+    <EditText
+        android:id="@+id/edtSenhaProf"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmailProf" />
+
+    <EditText
+        android:id="@+id/edtConfSenhaProf"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Confirmar Senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtSenhaProf" />
+
+    <EditText
+        android:id="@+id/edtTelProf"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Telefone"
+        android:inputType="phone"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtConfSenhaProf" />
+
+    <Button
+        android:id="@+id/btnCadastrarAluno"
+        android:layout_width="190dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/azul_escuro"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Cadastrar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTelProf" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

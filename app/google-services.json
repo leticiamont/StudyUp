@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "124227462308",
+    "project_id": "studyup-d1e41",
+    "storage_bucket": "studyup-d1e41.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124227462308:android:43a89f77e03ebfc7e3b231",
+        "android_client_info": {
+          "package_name": "br.edu.fatecpg.loginstudyupp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASv6za2tfFoJ94Zru6ETlk6CVMOpUqiM4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124227462308:android:34546600d63d7409e3b231",
+        "android_client_info": {
+          "package_name": "br.edu.fatecpg.studyup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASv6za2tfFoJ94Zru6ETlk6CVMOpUqiM4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- LinearLayout para os TextViews, mantendo a orientação vertical -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txvNomeAulaP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text=""
+            android:textAlignment="inherit"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txvDataAulaP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:text=""
+            android:textAlignment="inherit"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txvHoraAulaP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:text=""
+            android:textAlignment="inherit"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txvLinkAulaP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:text=""
+            android:textAlignment="inherit"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txvLinkVideoP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:text=""
+            android:textAlignment="inherit"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <!-- LinearLayout para os botões, com orientação horizontal -->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="190dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/azul_escuro"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Editar"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnExcluir"
+            android:layout_width="190dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/azul_escuro"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Excluir"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Divisor entre os botões -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
